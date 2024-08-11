@@ -1,0 +1,38 @@
+<!--@if ((question?.id ?? 0) % 2 === 0) {-->
+  <img [ngClass]="getClassCurlicue(2, 0)" ngSrc="/assets/images/fleurs_1.png" id="curlicue-top-right" height="483" width="517" />
+<!--}-->
+<!--@if ((question?.id ?? 0) % 2 === 1) {-->
+  <img [ngClass]="getClassCurlicue(2, 1)" ngSrc="/assets/images/fleurs_2.png" id="curlicue-bottom-left" height="482" width="517"/>
+<!--}-->
+<!--@if ((question?.id ?? 0) % 3 === 0) {-->
+  <img [ngClass]="getClassCurlicue(4, 0)" ngSrc="/assets/images/fleurs_1.png" id="curlicue-middle-left" height="483" width="517"/>
+<!--}-->
+<!--@if ((question?.id ?? 0) % 3 === 1) {-->
+  <img [ngClass]="getClassCurlicue(3, 1)" ngSrc="/assets/images/fleurs_1.png" id="curlicue-bottom-right" height="483" width="517"/>
+<!--}-->
+<!--@if ((question?.id ?? 0) % 3 === 2) {-->
+  <div [ngClass]="getClassCurlicue(3, 2)" id="curlicue-bottom-middle">
+    <img ngSrc="/assets/images/fleurs_2.png" height="482" width="517"/>
+  </div>
+<!--}-->
+<!--@if ((question?.id ?? 0) % 4 === 0) {-->
+  <div [ngClass]="getClassCurlicue(3, 0)" id="curlicue-middle-right">
+    <img ngSrc="/assets/images/fleurs_2.png" height="482" width="517"/>
+  </div>
+<!--}-->
+
+@if (question) {
+  <h3>{{question.question}}</h3>
+  @for (answer of question.answers; track answer; let index = $index) {
+    <app-answer [answer]="answer" [number]="index + 1" [isAnswerShown]="isAnswerShown[index]" [isAnswerCorrect]="isAnswerCorrect[index]" (answerSelected)="showAnswer(index)"></app-answer>
+  }
+  @if (question.alternativeAnswers && isAnswerShown[question.answers.length]) {
+    <div id="alternative-answer">
+      <h4>Réponses alternatives</h4>
+      @if (isAnswerShown) {
+        {{question.alternativeAnswers.join(', ')}}
+      }
+    </div>
+  }
+}
+

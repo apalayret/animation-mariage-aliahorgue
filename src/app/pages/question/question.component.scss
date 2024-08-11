@@ -1,0 +1,131 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  h3 {
+    margin: 20px auto;
+    color: var(--text-primary-color);
+    font-size: 3rem;
+    font-family: YAEw2GhSLyw-0;
+  }
+
+  app-answer {
+    z-index: 1;
+  }
+
+  #alternative-answer {
+    min-height: 60px;
+    width: 75%;
+    margin: 15px auto;
+    padding: 20px 0;
+    color: var(--text-primary-color);
+    box-shadow: inset -2px 0 0 var(--text-primary-color), inset 0 -2px 0 var(--text-primary-color), inset 2px 0 0 var(--text-primary-color), inset 0 2px 0 var(--text-primary-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      z-index: 1;
+    }
+  }
+
+  #curlicue-middle-left {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: calc(50% - 125px);
+    left: 28px;
+    clip-path: polygon(10% 0, 1px 34%, 0 48%, 9% 45%, 26% 28%, 32% 11%, 30% 0);
+    rotate: -18deg;
+  }
+
+  #curlicue-top-right {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -40px;
+    right: 45px;
+    clip-path: polygon(40% 0%, 75% 100%, 100% 100%, 100% 0%);
+    rotate: 40deg;
+  }
+
+  #curlicue-bottom-right {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 40px;
+    right: 26px;
+    clip-path: polygon(34% 19%, 8% 80%, 50% 71%, 50% 100%, 50% 26%);
+    rotate: 252deg;
+    transform: rotateX(180deg);
+  }
+
+  #curlicue-bottom-left {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 35px;
+    left: -30px;
+    clip-path: polygon(50% 28%, 25% 31%, 25% 39%, 24% 39%, 24% 38%, 17% 39%, 10% 51%, 37% 59%, 33% 70%, 45% 82%, 57% 83%, 64% 44%, 65% 37%);
+    rotate: -80deg;
+  }
+
+  #curlicue-bottom-middle {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    bottom: 30px;
+    left: calc(50% - 82px);
+    overflow: hidden;
+
+    img {
+      width: 200px;
+      height: 200px;
+      clip-path: polygon(92% 0, 19% 0, 0 14%, 0 17%, 8% 28%, 24% 38%, 26% 26%, 95% 29%);
+      rotate: 0deg;
+    }
+  }
+
+  #curlicue-middle-right {
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    top: calc(50% - 125px);
+    right: 30px;
+    overflow: hidden;
+
+    img {
+      width: 200px;
+      height: 200px;
+      clip-path: polygon(65% 55%, 64% 68%, 77% 91%, 93% 93%, 99% 81%, 94% 65%, 76% 63%);
+      rotate: -136deg;
+      translate: -58px 25px;
+    }
+  }
+
+  .curlicue {
+    opacity: 0;
+  }
+  .fade-in {
+    //opacity: 1;
+    //animation: fadeIn 2s;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+  }
+  .hide {
+    //opacity: 0;
+    //animation: fadeOut 2s;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+  }
+
+}
