@@ -9,7 +9,7 @@ import {NgOptimizedImage, provideImgixLoader} from "@angular/common";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   providers: [
-    provideImgixLoader(isDevMode() ? 'http://localhost:4200/' : 'https://apalayret.github.io/animation-mariage-boubou/'),
+    provideImgixLoader(isDevMode() ? 'http://localhost:4200/' : 'https://apalayret.github.io/animation-mariage-aliahorgue/'),
   ],
 })
 export class AppComponent {

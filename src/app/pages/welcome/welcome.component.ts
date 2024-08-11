@@ -14,7 +14,7 @@ import {datas} from "../../datas/questions-reponses";
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.scss',
   providers: [
-    provideImgixLoader(isDevMode() ? 'http://localhost:4200/' : 'https://apalayret.github.io/animation-mariage-boubou/'),
+    provideImgixLoader(isDevMode() ? 'http://localhost:4200/' : 'https://apalayret.github.io/animation-mariage-aliahorgue/'),
   ],
 })
 export class WelcomeComponent {

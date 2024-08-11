@@ -16,7 +16,7 @@ import {KeyCode} from "../../KeyCode.utils";
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
   providers: [
-    provideImgixLoader(isDevMode() ? 'http://localhost:4200/' : 'https://apalayret.github.io/animation-mariage-boubou/'),
+    provideImgixLoader(isDevMode() ? 'http://localhost:4200/' : 'https://apalayret.github.io/animation-mariage-aliahorgue/'),
   ],
 })
 export class FooterComponent implements OnInit {
