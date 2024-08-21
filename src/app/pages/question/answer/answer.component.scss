@@ -43,6 +43,10 @@
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   cursor: pointer;
+
+  p {
+    margin: auto;
+  }
 }
 
 /* Style the back side */

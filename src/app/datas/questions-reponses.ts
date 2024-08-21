@@ -147,7 +147,7 @@ export const datas: QuestionAnswers[] = [
   },
   {
     id: 5,
-    question: 'Qu\'est-ce que Pierre-Yves repproche le plus souvent à Céline ?',
+    question: 'Qu\'est-ce que Pierre-Yves reproche le plus souvent à Céline ?',
     answers: [
       {
         answer: 'De tout garder',
