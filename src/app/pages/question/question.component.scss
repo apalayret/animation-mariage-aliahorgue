@@ -36,78 +36,101 @@
     }
   }
 
-  #curlicue-middle-left {
+  #curlicue-1-1 {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    top: calc(50% - 125px);
-    left: 28px;
-    clip-path: polygon(10% 0, 1px 34%, 0 48%, 9% 45%, 26% 28%, 32% 11%, 30% 0);
-    rotate: -18deg;
+    bottom: 50px;
+    right: 0;
+    clip-path: polygon(20% 100%, 20% 20%, 70% 20%, 70% 100%);
   }
 
-  #curlicue-top-right {
+  #curlicue-1-2 {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    top: -40px;
-    right: 45px;
-    clip-path: polygon(40% 0%, 75% 100%, 100% 100%, 100% 0%);
-    rotate: 40deg;
+    bottom: 50px;
+    left: 25px;
   }
 
-  #curlicue-bottom-right {
+  #curlicue-2-1 {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    bottom: 40px;
-    right: 26px;
-    clip-path: polygon(34% 19%, 8% 80%, 50% 71%, 50% 100%, 50% 26%);
-    rotate: 252deg;
-    transform: rotateX(180deg);
+    top: 75px;
+    right: 5px;
   }
 
-  #curlicue-bottom-left {
+  #curlicue-2-2 {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    bottom: 35px;
-    left: -30px;
-    clip-path: polygon(50% 28%, 25% 31%, 25% 39%, 24% 39%, 24% 38%, 17% 39%, 10% 51%, 37% 59%, 33% 70%, 45% 82%, 57% 83%, 64% 44%, 65% 37%);
-    rotate: -80deg;
+    bottom: 50px;
+    left: calc(50% - 75px);
   }
 
-  #curlicue-bottom-middle {
+  #curlicue-3-1 {
     position: absolute;
-    width: 200px;
-    height: 100px;
-    bottom: 30px;
-    left: calc(50% - 82px);
-    overflow: hidden;
-
-    img {
-      width: 200px;
-      height: 200px;
-      clip-path: polygon(92% 0, 19% 0, 0 14%, 0 17%, 8% 28%, 24% 38%, 26% 26%, 95% 29%);
-      rotate: 0deg;
-    }
+    top: calc(50% - 135px);
+    right: 5px;
   }
 
-  #curlicue-middle-right {
+  #curlicue-3-2 {
     position: absolute;
-    width: 70px;
-    height: 100px;
-    top: calc(50% - 125px);
-    right: 30px;
-    overflow: hidden;
+    bottom: 50px;
+    left: 25px;
+  }
 
-    img {
-      width: 200px;
-      height: 200px;
-      clip-path: polygon(65% 55%, 64% 68%, 77% 91%, 93% 93%, 99% 81%, 94% 65%, 76% 63%);
-      rotate: -136deg;
-      translate: -58px 25px;
-    }
+  #curlicue-4-1 {
+    position: absolute;
+    bottom: 75px;
+    right: 25px;
+  }
+
+  #curlicue-4-2 {
+    position: absolute;
+    top: calc(50% - 172px);
+    left: 5px;
+  }
+
+  #curlicue-5-1 {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+  }
+
+  #curlicue-5-2 {
+    position: absolute;
+    bottom: 60px;
+    left: calc(50% - 117px);
+  }
+
+  #curlicue-6-1 {
+    position: absolute;
+    bottom: 65px;
+    left: 20px;
+  }
+
+  #curlicue-6-2 {
+    position: absolute;
+    top: calc(50% - 150px);
+    right: 5px;
+  }
+
+  #curlicue-7-1 {
+    position: absolute;
+    top: calc(50% - 133px);
+    left: -20px;
+  }
+
+  #curlicue-7-2 {
+    position: absolute;
+    bottom: 75px;
+    right: 25px;
+  }
+
+  #curlicue-8-1 {
+    position: absolute;
+    top: 75px;
+    right: 0;
+  }
+
+  #curlicue-8-2 {
+    position: absolute;
+    bottom: 75px;
+    left: 25px;
   }
 
   .curlicue {
