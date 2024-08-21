@@ -16,306 +16,259 @@ export type Errors = [boolean, boolean, boolean];
 export const datas: QuestionAnswers[] = [
   {
     id: 1,
-    question: 'Pourquoi Madeleine et Hugo sont-ils allés à Marseille ?',
+    question: 'Quel est le talent caché de Pierre-Yves ?',
     answers: [
       {
-        answer: 'Soleil',
+        answer: 'Musique',
+        percentage: 42
+      },
+      {
+        answer: 'Sports extrêmes (plongeon et ski essentiellement)',
         percentage: 21
       },
       {
-        answer: 'Vie plus tranquille (Provence…)',
+        answer: 'Photobooth',
         percentage: 17
       },
       {
-        answer: 'Mer',
-        percentage: 16
+        answer: 'Cuisine',
+        percentage: 12
       },
       {
-        answer: 'Corse',
-        percentage: 11
-      },
-      {
-        answer: 'Travail',
-        percentage: 7
-      },
-      {
-        answer: 'Marre de Paris',
-        percentage: 7
-      },
-      {
-        answer: 'Attractivité de Marseille (The place to be...)',
+        answer: 'Danse',
         percentage: 8
-      },
-      {
-        answer: 'Jul',
-        percentage: 2
       }
     ],
     alternativeAnswers: [
-      'Gastronomie (rosé, pastis et bouillabaisse)',
-      'Italie',
-      'Randonnée et voile',
-      'L\'accent'
+      'Eleveur de cafards',
+      'Capacité à se lancer malgré la peur'
     ],
     nextQuestion: 2
   },
   {
     id: 2,
-    question: 'Qu\'est-ce que Madeleine aime chez Hugo ?',
+    question: 'Quel est l\'objet dont Céline possède le plus d\'exemplaires  ?',
     answers: [
       {
-        answer: 'Tout (ou presque)',
+        answer: 'Calendriers de l\'avent',
+        percentage: 56
+      },
+      {
+        answer: 'Chaussures',
         percentage: 18
       },
       {
-        answer: 'Rassurant / Fiable / Calme',
-        percentage: 12
+        answer: 'Peluches',
+        percentage: 15
       },
       {
-        answer: 'Element Physique (Yeux, sourire...)',
-        percentage: 14
+        answer: 'Tasses',
+        percentage: 7
       },
       {
-        answer: 'Gentillesse / Bienveillance / Douceur',
-        percentage: 16
-      },
-      {
-        answer: 'Cuisinier hors pair',
-        percentage: 10
-      },
-      {
-        answer: 'Il met toujours du rosé au frais',
-        percentage: 2
-      },
-      {
-        answer: 'Leadership / Prestance / Assurance / Entreprenant',
-        percentage: 8
-      },
-      {
-        answer: 'Italien',
-        percentage: 6
+        answer: 'Cailloux / coquillages',
+        percentage: 4
       }
     ],
     alternativeAnswers: [
-      'Humour',
-      'Ponctualité',
-      'Sérieux',
-      'Curiosité'
+      'Jouets pour adultes',
+      'Poches',
+      'Culottes',
+      'Bouteilles Pierre Fabre',
+      'Jouets Kinder',
+      'Stylos'
     ],
     nextQuestion: 3
   },
   {
     id: 3,
-    question: 'Qu\'est-ce que Hugo aime chez Madeleine ?',
+    question: 'Quelle est la qualité préférée de Céline chez Pierre-Yves ?',
     answers: [
       {
-        answer: 'Tout (et il a intérêt)',
-        percentage: 24
+        answer: 'calme / patience',
+        percentage: 47
       },
       {
-        answer: 'Son sourire',
+        answer: 'Gentillesse / Prévenance / Ecoute',
+        percentage: 25
+      },
+      {
+        answer: 'Organisation',
         percentage: 13
       },
       {
-        answer: 'Enthousiasme / Spontanéité / Optimisme',
-        percentage: 13
-      },
-      {
-        answer: 'Ses yeux',
-        percentage: 11
-      },
-      {
-        answer: 'Gentillesse / Bienveillance / Générosité',
+        answer: 'Perfection / Génialitude',
         percentage: 9
       },
       {
-        answer: 'Ses boucles',
-        percentage: 9
-      },
-      {
-        answer: 'Douceur',
-        percentage: 7
-      },
-      {
-        answer: 'Elle a toujours du rosé',
-        percentage: 2
+        answer: 'Talent de cuisinier',
+        percentage: 6
       }
     ],
     alternativeAnswers: [
-      'Humour',
-      'Son attention aux autres',
-      'Son esprit',
+      'Sa culture',
+      'Son éducation',
+      'Son humour'
     ],
-    nextQuestion: 7
+    nextQuestion: 4
   },
   {
     id: 4,
-    question: 'Qu\'est-ce qu\'une "bonne soirée" pour Madeleine et Hugo ?',
+    question: 'Quelle est la qualité préférée de Pierre-Yves chez Céline ?',
     answers: [
       {
-        answer: 'À boire !',
-        percentage: 35
+        answer: 'Patience / Bienveillance / Douceur / Gentillesse',
+        percentage: 39
       },
       {
-        answer: 'Avec des amis',
-        percentage: 28
+        answer: 'Son caractère',
+        percentage: 29
       },
       {
-        answer: 'Un bon repas',
+        answer: 'Ténacité / Résilience',
         percentage: 16
       },
       {
-        answer: 'Tranquillité / Cosy',
-        percentage: 6
+        answer: 'Ses collections',
+        percentage: 11
       },
       {
-        answer: 'Être tout les deux',
-        percentage: 6
-      },
-      {
-        answer: 'Discution jusqu\'au bout de la nuit',
-        percentage: 4
-      },
-      {
-        answer: 'Musique',
-        percentage: 3
+        answer: 'Joueuse / Clown',
+        percentage: 5
       }
     ],
     alternativeAnswers: [
-      'Balade',
-      'De la rigolade'
-    ]
+      'Talent de cuisinière',
+      'Dynamisme',
+      'Tout'
+    ],
+    nextQuestion: 5
+
   },
   {
     id: 5,
-    question: 'Quelles sont les activités préférées de Madeleine le dimanche ?',
+    question: 'Qu\'est-ce que Pierre-Yves repproche le plus souvent à Céline ?',
     answers: [
       {
-        answer: 'Planche à voile',
-        percentage: 19
+        answer: 'De tout garder',
+        percentage: 46
       },
       {
-        answer: 'Se balader (calanques, plage)',
-        percentage: 17
+        answer: 'Rien',
+        percentage: 24
       },
       {
-        answer: 'Farniente / Grasse matinée',
-        percentage: 13
+        answer: 'De toujours vouloir avoir raison',
+        percentage: 15
       },
       {
-        answer: 'Aller au marché (avec Hugo)',
-        percentage: 13
-      },
-      {
-        answer: 'Bon petit déjeuner / Brunch',
+        answer: 'De se moquer de lui',
         percentage: 9
       },
       {
-        answer: 'Voir / Discuter avec ses amis',
-        percentage: 7
-      },
-      {
-        answer: 'Café / Bar / Terrasse',
-        percentage: 7
-      },
-      {
-        answer: 'Faire des mots fléchés',
-        percentage: 3
+        answer: 'De chanter faux sous la douche',
+        percentage: 6
       }
     ],
     alternativeAnswers: [
-      'Cuisiner',
-      'Passer du temps en famille',
-      'Prendre le train pour Paris'
+      'Son indécision',
+      'De ne pas se poser',
+      'D\'aimer la routine',
+      'De ramener trop de produits Pierre Fabre'
     ],
     nextQuestion: 6
   },
   {
     id: 6,
-    question: 'Quelles sont les activités préférées de Hugo le dimanche ?',
+    question: 'Qu\'est-ce que Céline reproche le plus souvent à Pierre-Yves ?',
     answers: [
       {
-        answer: 'Faire de la voile (catamaran)',
-        percentage: 18
+        answer: 'Oublis / Manque d\'attention',
+        percentage: 34
       },
       {
-        answer: 'Cuisiner',
-        percentage: 14
+        answer: 'Maladresses / boulettes',
+        percentage: 25
       },
       {
-        answer: 'Aller au marché',
+        answer: 'Tâches ménagères (notamment laisser traîner ses chaussettes)',
+        percentage: 23
+      },
+      {
+        answer: 'Rien (il paraît qu\'il est parfait)',
         percentage: 11
       },
       {
-        answer: 'Boire des coups avec les amis',
-        percentage: 9
-      },
-      {
-        answer: 'Se balader',
-        percentage: 9
-      },
-      {
-        answer: 'Regarder du sport',
-        percentage: 7
-      },
-      {
-        answer: 'Bricolage / Ménage / Repassage',
-        percentage: 7
-      },
-      {
-        answer: 'Lire le journal (L\'Équipe)',
+        answer: 'Râler',
         percentage: 7
       }
     ],
     alternativeAnswers: [
-      'Farniente',
-      'Passer du temps avec Madeleine',
-      'Faire de la musique'
+      'Ne pas savoir tenir un secret',
+      'Pas assez combatif',
+      'Ne pas la comprendre',
+      ' Tout'
     ],
-    nextQuestion: 4
+    nextQuestion: 7
   },
   {
     id: 7,
-    question: 'Citez un lieu où l\'on peut trouver Madeleine et Hugo.',
+    question: 'Si Céline était une émission de télévision, laquelle serait-elle ?',
     answers: [
       {
-        answer: 'Bar / PMU / Café',
+        answer: 'Emission de sport',
+        percentage: 31
+      },
+      {
+        answer: 'Jeu télévisé',
+        percentage: 23
+      },
+      {
+        answer: 'Jeux d\'aventure',
         percentage: 21
       },
       {
-        answer: 'Marseille',
-        percentage: 19
+        answer: 'Téléréalité romantique',
+        percentage: 15
       },
       {
-        answer: 'Club Nautique de Marseille / Mer',
-        percentage: 17
-      },
-      {
-        answer: 'Corse',
-        percentage: 12
-      },
-      {
-        answer: 'Au soleil',
-        percentage: 7
-      },
-      {
-        answer: 'Train',
-        percentage: 5
-      },
-      {
-        answer: 'Paris',
-        percentage: 6
-      },
-      {
-        answer: 'Touraine',
-        percentage: 6
+        answer: 'Emission de construction / bricolage',
+        percentage: 10
       }
     ],
     alternativeAnswers: [
-      'Plage',
-      'Marché'
+      'Emission de chinage',
+      'Tintin'
     ],
-    nextQuestion: 5
+    nextQuestion: 8
+  },
+  {
+    id: 8,
+    question: 'Si Pierre-Yves était un film, lequel serait-il ?',
+    answers: [
+      {
+        answer: 'Comédie',
+        percentage: 40
+      },
+      {
+        answer: 'Aventure Fantasy',
+        percentage: 22
+      },
+      {
+        answer: 'Science-fiction',
+        percentage: 19
+      },
+      {
+        answer: 'Thriller',
+        percentage: 11
+      },
+      {
+        answer: 'Comédie dramatique',
+        percentage: 8
+      }
+    ],
+    alternativeAnswers: [
+      'Aventure dramatique'
+    ]
   }
-
 ]
